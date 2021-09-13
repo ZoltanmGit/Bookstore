@@ -1,0 +1,43 @@
+7-es feladat: Könyvtári Kölcsönző
+
+Készítsük el egy könyvtár online kölcsönzői és nyilvántartó rendszerét, amellyel a látogatók kölcsönzését,
+előjegyzését, valamint a könyvtárosok adminisztratív munkáját tudjuk támogatni.
+
+1) Részfeladat - a webes felületen a látogatók adhatnak le online előjegyzéseket, illetve böngészhetik a kínálatot.
+
+A főoldalon a könyvtárban elérhető könyvek kerülnek kilistázásra, alapértelmezetten népszerűségi
+sorrendben (kölcsönzések száma), de a felhasználó választhat cím szerinti lexikografikus rendezést is.
+Egy oldalon legfeljebb 20 könyv jelenik meg, a többit lapozással lehet elérni. A könyvek címmel, (első)
+szerzővel, kiadási évvel, ISBN számmal és borítóképpel rendelkeznek, amelyek megjelenítésre kerülnek.
+
+A látogatók a könyvek között cím és szerző szerint, szabad szavas beviteli mező segítségével szűrhetnek.
+
+Egy könyvet kiválasztva megjelenítésre kerülnek a kötetei, valamint esetlegesen aktív kölcsönzésük és
+jövőbeni előjegyzéseik
+
+A látogatók regisztrációt (név, telefonszám, e-mail cím, felhasználónév, jelszó, megerősített jelszó) és
+bejelentkezést követően előjegyzést adhatnak le egy kötetre, a kölcsönzés tervezett kezdő és befejező
+napját megadva. Az előjegyzés nem fedhet át aktív kölcsönzéssel vagy más előjegyzéssel.
+
+2) Részfeladat - a könyvtárosok az asztali grafikus felületen keresztül adminisztrálhatják a könyveket és a kölcsönzéseket.
+
+A könyvtáros bejelentkezhet (felhasználónév és jelszó megadásával) a programba, illetve kijelentkezhet;
+a további funkcionalitások csak bejelentkezett állapotban elérhetőek.
+
+Az alkalmazás listázza a könyveket, valamint a hozzájuk tartozó köteteket. Lehetőség van új könyv,
+illetve kötet rögzítésére.
+
+A könyvtáros selejtezhet egy kötetet, de csak akkor, ha nincsen aktuálisan kikölcsönözve. Az esedékes
+jövőbeni előjegyzések törlésre kerülnek és az adott kötet továbbá nem lesz kölcsönözhető.
+
+Az alkalmazás listázza az aktív kölcsönzéseket és a jövőben esedékes előjegyzéseket. A könyvtáros
+egy aktív kölcsönzést inaktívvá tehet (visszavitték a könyvet), valamint egy inaktív előjegyzést aktív
+kölcsönzésnek jelölhet (elvitték a könyvet). Egy kölcsönzés státuszának változtatása nincs a tervezett
+kezdő és befejező naphoz kötve (gondolva pl. a késedelmes visszavitelre), azonban egy kötetnek egyszerre
+legfeljebb egy aktív kölcsönzése lehet.
+
+- könyvek (cím, szerző, kiadás éve, ISBN szám, borítókép);
+- kötetek (könyv, könyvtári azonosító);
+- kölcsönzések (kötet, látogató, kezdő nap, befejező nap, aktív-e)
+- látogatók (név, cím, telefonszám, azonosító, jelszó);
+- könyvtárosok (név, azonosító, jelszó).
